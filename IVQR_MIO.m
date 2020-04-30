@@ -160,7 +160,7 @@ try
     fprintf('Optimization returned status: %s\n', result.status);
    
 catch gurobiError
-    fprintf('Error reported\n');
+    fprintf(2, 'Error reported. The error message was: %s \n',gurobiError.message);
 end
 
 end
